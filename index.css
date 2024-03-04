@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+*{  
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(75deg,rgb(211, 44, 44),rgb(218, 39, 176));
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+h1{
+    color: white;
+    text-shadow: 2px 2px 2px black;
+}
+div{
+    width: 65vw;
+    height: 60vh;
+    background-color: rgba(24, 23, 23, 0.3);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 5px 5px 5px black;
+    /* gap: 10%; */
+}
+#time{
+    font-size: 8vw;
+}
+#date{
+    font-size: 3vw;
+}
+#week{
+    font-size: 3vw;
+    font-family: 'Archivo Black', sans-serif;}
+#sec{
+    font-size: 50vw;
+    position: absolute;
+    z-index: -1;
+    transform: translateY(-82%);
+    animation: secAnimation 1s infinite;
+    animation: name duration timing-function delay iteration-count direction fill-mode;
+}
+@keyframes secAnimation{
+    from{
+        transform: translateY(-82%)
+    }
+    to{
+        transform: translateY(0px);
+    }
+}
